@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500&family=Roboto+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e4c6c6;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  height: 400px;
+  background-color: rgb(255, 246, 246);
+  border: 0.5px solid #E6CBCB;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1 {
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 23px;
+  color: #7e4444;
+  text-shadow: 0px 2px 2px rgba(31, 10, 10, 0.25), 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form__select{
+  display: flex;
+  justify-content: space-around;
+}
+.select {
+  position: relative;
+  width: 340px;
+  height: 40px;
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 18px;
+  margin-right:20px;
+  color: #b16262;
+}
+.select[active="active"] .select__title::before {
+  transform: translate(-3px, -50%) rotate(-45deg);
+}
+.select[active="active"] .select__title::after {
+  transform: translate(3px, -50%) rotate(45deg);
+}
+.select[active="active"] .select__content {
+  opacity: 1;
+}
+.select[active="active"] .select__label + .select__input + .select__label {
+  max-height: 40px;
+  border-top-width: 1px;
+}
+.select__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #C28686;
+  cursor: pointer;
+}
+.select__title::before, .select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+  background-color: #8b3a3a;
+  transform: translate(-3px, -50%) rotate(45deg);
+}
+.select__title::after {
+  transform: translate(3px, -50%) rotate(-45deg);
+}
+.select__title:hover, .text__input:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.select__title:hover::before, .select__title:hover::after {
+  background-color: #b16262;
+}
+.select__content {
+  position: absolute;
+  top: 40px;
+  left: 3px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: rgb(248, 235, 235);
+  border: 1px solid #c7ccd1;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+.select__input {
+  display: none;
+}
+.select__input:checked + label {
+  background-color: #f7dfdf;
+}
+.select__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+.select__label + input + .select__label {
+  border-top: 0 solid rgba(199, 204, 209, 0.3764705882);
+}
+.select__label:hover {
+  background-color: rgb(194, 134, 134) !important;
+  color: #ffffff;
+}
+.form__text{
+  display: flex;
+  justify-content: space-between;
+}
+.text__input{
+  height: 40px;
+  width: 220px;
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 18px;
+  color: #b16262;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #C28686;
+  cursor: pointer;
+  background-color:rgb(255, 246, 246);
+}
+.text__input:focus-visible{
+  outline: -webkit-focus-ring-color 1px;
+}
+.form__evaluate{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-top: 30px;
+}
+.form__evaluate button {
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 18px;
+  color: #f3e3e3;
+  margin-right: 30px;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: 1px solid #C28686;
+  background-color:#C28686;
+  cursor: pointer;
+}
+.form__evaluate p {
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 18px;
+  color:#8b3a3a;
+}
