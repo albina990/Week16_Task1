@@ -170,7 +170,7 @@ h1 {
   background-color:#C28686;
   cursor: pointer;
 }
-.form__evaluate p {
+.form__evaluate__txt p {
   font-family: "Roboto Flex";
   font-weight: 400;
   font-size: 18px;

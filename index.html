@@ -16,44 +16,43 @@
                     <div class="select">
                         <div class="select__title" data-default="Option 0">Марка</div>
                         <div class="select__content">
-                            <input id="brand" class="select__input" type="radio" name="singleSelect" checked />
+                            <input id="brand" class="select__input" type="radio" name="singleSelect1" value="0" checked />
                             <label for="brand" class="select__label">Марка</label>
-                            <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect1" class="select__label">Option 1</label>
-                            <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect2" class="select__label">Option 2</label>
-                            <input id="singleSelect3" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect3" class="select__label">Option 3</label>
-                            <input id="singleSelect4" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect4" class="select__label">Option 4</label>
+                            <input id="select-brand1" class="select__input" type="radio" name="singleSelect1" value="1"/>
+                            <label for="select-brand1" class="select__label">Mercedes Benz</label>
+                            <input id="select-brand2" class="select__input" type="radio" name="singleSelect1" value="2"/>
+                            <label for="select-brand2" class="select__label">Toyota</label>
+                            <input id="select-brand3" class="select__input" type="radio" name="singleSelect1" value="3"/>
+                            <label for="select-brand3" class="select__label">Mazda</label>
+                            <input id="select-brand4" class="select__input" type="radio" name="singleSelect1" value="4"/>
+                            <label for="select-brand4" class="select__label">Volkswagen</label>
                         </div>
                     </div>
                     <div class="select">
                         <div class="select__title" data-default="Option 0">Год выпуска</div>
                         <div class="select__content">
-                            <input id="brand" class="select__input" type="radio" name="singleSelect" checked />
-                            <label for="brand" class="select__label">Год выпуска</label>
-                            <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" value="1990"/>
-                            <label for="singleSelect1" class="select__label">Option 1</label>
-                            <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" value="2000"/>
-                            <label for="singleSelect2" class="select__label">Option 2</label>
-                            <input id="singleSelect3" class="select__input" type="radio" name="singleSelect" value="2010"/>
-                            <label for="singleSelect3" class="select__label">Option 3</label>
-                            <input id="singleSelect4" class="select__input" type="radio" name="singleSelect" value="2020"/>
-                            <label for="singleSelect4" class="select__label">Option 4</label>
+                            <input id="year" class="select__input" type="radio" name="singleSelect2" value="0.0" checked />
+                            <label for="year" class="select__label">Год выпуска</label>
+                            <input id="select-year1" class="select__input" type="radio" name="singleSelect2" value="0.3"/>
+                            <label for="select-year1" class="select__label">с 1990 по 2000</label>
+                            <input id="select-year2" class="select__input" type="radio" name="singleSelect2" value="0.5"/>
+                            <label for="select-year2" class="select__label">с 2000 по 2010</label>
+                            <input id="select-year3" class="select__input" type="radio" name="singleSelect2" value="0.7"/>
+                            <label for="select-year3" class="select__label">с 2010 по 2020</label>
+                            <input id="select-year4" class="select__input" type="radio" name="singleSelect2" value="1.0"/>
+                            <label for="select-year4" class="select__label">после 2020</label>
                         </div>
                     </div>
                     </div>
                     <div class="form__text">
-                        <input class="text__input" type="text" placeholder="Мощность, л.с.">
-                        <input class="text__input" type="text" placeholder="Объём двигателя, см3">
-                        <input class="text__input" type="text" placeholder="Пробег, км">
+                        <input class="text__input" id="power" type="text" placeholder="Мощность, л.с.">
+                        <input class="text__input" id="engine" type="text" placeholder="Объём двигателя, см3">
+                        <input class="text__input" id="mileage" type="text" placeholder="Пробег, км">
                     </div>
                 </div>
                 <div class="form__evaluate">
                     <button>Оценить</button>
-                    <p>Чтобы получить более точную оценку, заполните все поля</p>
-                    <!-- <p>Приблизительная стоимость:</p> -->
+                    <div class="form__evaluate__txt"></div>
                 </div>
                 
             </form>
