@@ -10,7 +10,6 @@ body {
 .container {
   max-width: 800px;
   margin: 20px auto;
-  height: 400px;
   background-color: rgb(255, 246, 246);
   border: 0.5px solid #E6CBCB;
   border-radius: 5px;
@@ -27,23 +26,21 @@ h1 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-.form{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 .form__select{
   display: flex;
   justify-content: space-around;
+  flex-wrap:wrap;
+
 }
 .select {
   position: relative;
   width: 340px;
   height: 40px;
+  margin-bottom: 15px;
   font-family: "Roboto Flex";
   font-weight: 400;
   font-size: 18px;
-  margin-right:20px;
   color: #b16262;
 }
 .select[active="active"] .select__title::before {
@@ -132,7 +129,7 @@ h1 {
 }
 .form__text{
   display: flex;
-  justify-content: space-between;
+  margin-left:10px;
 }
 .text__input{
   height: 40px;
@@ -141,8 +138,8 @@ h1 {
   font-weight: 400;
   font-size: 18px;
   color: #b16262;
-  margin-top: 30px;
   margin-right: 20px;
+  margin-bottom: 20px;
   padding: 8px 16px;
   border-radius: 5px;
   border: 1px solid #C28686;
@@ -175,4 +172,16 @@ h1 {
   font-weight: 400;
   font-size: 18px;
   color:#8b3a3a;
+}
+.form__state{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-family: "Roboto Flex";
+  font-weight: 400;
+  font-size: 18px;
+  color: #b16262;
+}
+.form__state input {
+  margin-right: 10px;
+  margin-left: 15px;
 }
